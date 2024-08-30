@@ -1,0 +1,263 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* ==================Start-Navbar================== */
+
+@media (max-width: 500px) {
+  .navbar-nav li {
+    display: block;
+  }
+  .dropdown-menu li {
+    position: relative;
+    display: block;
+  }
+  .dropdown-menu .dropdown-submenu {
+    position: absolute;
+    display: none;
+    right: 37%;
+    top: 50%;
+  }
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+  }
+  nav .active {
+    --bs-navbar-active-color: var(--main-of-color);
+  }
+  nav .nav-item .nav-link:hover {
+    color: var(--main-of-color);
+  }
+}
+
+@media (min-width: 501px) and (max-width: 767px) {
+  .navbar-nav li {
+    display: block;
+  }
+  .dropdown-menu li {
+    position: relative;
+    display: block;
+  }
+  .dropdown-menu .dropdown-submenu {
+    position: absolute;
+    display: none;
+    left: 27%;
+    top: 50%;
+  }
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+  }
+  nav .active {
+    --bs-navbar-active-color: #0078ff;
+  }
+  nav .nav-item .nav-link:hover {
+    color: var(--main-of-color);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav li {
+    display: block;
+  }
+  .dropdown-menu li {
+    position: relative;
+    display: block;
+  }
+  .dropdown-menu .dropdown-submenu {
+    position: absolute;
+    display: none;
+    left: 20%;
+    top: 50%;
+  }
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+  }
+  nav .active {
+    --bs-navbar-active-color: #0078ff;
+  }
+  nav .nav-item .nav-link:hover {
+    color: var(--main-of-color);
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav li {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    display: none;
+    left: 6%;
+    --bs-border-radius: 0;
+    border: none;
+  }
+
+  .navbar-nav > li:hover > .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu li {
+    position: relative;
+  }
+
+  .dropdown-menu .dropdown-submenu {
+    position: absolute;
+    display: none;
+    left: 100%;
+    top: -7px;
+  }
+
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+  }
+
+  nav .active {
+    position: relative;
+    --bs-navbar-active-color: var(--color-of-white);
+  }
+
+  nav .active::after {
+    content: "";
+    position: absolute;
+    top: 83%;
+    left: 14%;
+    background-color: var(--color-of-white);
+    width: 55%;
+    height: 0.125rem;
+  }
+
+  nav .collapse .navbar-nav > li:not(:nth-child(6))::after {
+    content: "";
+    position: absolute;
+    top: 83%;
+    left: 25%;
+    background-color: var(--color-of-white);
+    width: 0;
+    height: 0.125rem;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  nav .collapse .navbar-nav > li:not(:nth-child(6)):hover:after {
+    width: 40%;
+  }
+
+  li:nth-child(6)::after {
+    content: "";
+    position: absolute;
+    top: 83%;
+    left: 17%;
+    background-color: var(--color-of-white);
+    width: 0;
+    height: 0.125rem;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  li:nth-child(6):hover:after {
+    width: 50%;
+  }
+}
+
+/* ===================End-Navbar================== */
+
+/* ===============Start-home-section============== */
+
+@media (max-width: 521px) {
+  #home h1 {
+    font-size: 3rem;
+    width: 60%;
+    text-align: center;
+  }
+
+  #home p::after {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 522px) and (max-width: 767px) {
+  #home h1 {
+    font-size: 3rem;
+  }
+
+  #home p::after {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #home h1 {
+    font-size: 4.5rem;
+    width: 60%;
+    text-align: center;
+  }
+
+  #home p::after {
+    font-size: 2.5rem;
+  }
+}
+
+/* ================End-home-section=============== */
+
+/* ==============Start-about-section============= */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #about .part-1 img {
+    width: 80%;
+  }
+}
+
+/* ==============End-about-section============= */
+
+/* ============Start-counter-section============ */
+
+@media (max-width: 576px) {
+  .counter .counter-box {
+    margin-bottom: 0;
+  }
+}
+
+/* ==============End-counter-section============= */
+
+/* ==============Start-work-section============== */
+
+@media (max-width: 576px) {
+  #work .work-content .card-1 {
+    width: 66.6666%;
+  }
+
+  #work .work-content .card-2 {
+    width: 33.3333%;
+  }
+}
+
+/* =================End-work-section============= */
+
+/* ==========Start-testimonials-section========== */
+
+@media (max-width: 1024px) {
+  .testimonials .content-text p {
+    padding: 0;
+  }
+}
+
+/* ===========End-testimonials-section========== */
+
+/* ============Start-blog-section=============== */
+
+@media (max-width: 576px) {
+  #blog .card .card-footer .card-1 {
+    width: 66.6666%;
+  }
+
+  #blog .card .card-footer .card-2 {
+    width: 33.3333%;
+  }
+}
+
+/* ==============End-blog-section=============== */
